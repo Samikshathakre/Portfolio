@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Porfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/60808766b4.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- home -->
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/Final_Logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Samiksha</span> <br>Thakre From India</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- -------- About-------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/2about.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Enthusiastic code crafter ready to dive into the world of software development with fresh ideas and a hunger for innovation. Driven by curiosity and fueled by a love for elegant solutions, I'm on a mission to turn lines of code into impactful experiences. Let's build tomorrow's digital landscape together.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="Skills">
+                        <ul>
+                            <li><span>Languages</span><br>C,C++,Java,JavaScript,SQL,XML</li>
+                            <li><span>Frameworks</span><br>HTML,CSS,Bootstrap,React</li>
+                            <li><span>Developer Tools</span><br>VS Code,Figma,Canva</li>
+                            <li><span>Version Control System</span><br>Git,Github</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Experience">
+                        <ul>
+                            <li><span>Will Update Soon</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="Education">
+                        <ul>
+                            <li><span>2021-2025</span><br><b>Bachelor Of Technology</b><br>G.H.Raisoni College Of
+                                Engineering And Management,Pune [CGPA-9.42]</li>
+                            <li><span>2019-2021</span><br><b>Higher Secondary Certificate</b><br>St. Pual Jr College
+                                ,Nagpur [Percentage-88%]</li>
+                            <li><span>2018-2019</span><br><b>Secondary School Certificate</b><br>Macroon Students
+                                Academy School,wani [Percentage-82%]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------ Projects------->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="project-list">
+                <div class="project">
+                    <img src="images/portfolio photo.jpg">
+                    <div class="layer">
+                        <h3>Porfolio Website</h3>
+                        <p>This Website show case my Skills set and Education.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/spotify.jpg">
+                    <div class="layer">
+                        <h3>Spotify Clone Website</h3>
+                        <p>A Spotify clone project involves replicating many of the features and functionalities of the
+                            popular music streaming platform.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="images/todo list.jpg">
+                    <div class="layer">
+                        <h3>Todo-List Website</h3>
+                        <p>Created a Todo list website involves building a platform where users can manage their tasks
+                            by adding task, and deleting task.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- -----------Contact Me ---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fa-solid fa-paper-plane"></i>samikshathakre116@gmail.com</p>
+                  <p><i class="fa-solid fa-phone"></i>7666756150</p>
+                  <div class="social-icons">
+                    <a href="https://linkedin.com/in/samiksha-thakre"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Samikshathakre"><i class="fa-brands fa-github"></i></a>
+                  </div>
+                  <a href="images/updated resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email"
+                        placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Samiksha.Made with <i class="fa-solid fa-heart"></i> by Samiksha Thakre</p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
